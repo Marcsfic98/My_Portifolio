@@ -10,7 +10,8 @@
     padding: 0 4%;
 }
 
-.sobre h2{
+ .sobre .container h2{
+    text-align: left;
     font-size: 45px;
     color: #38055d;
     font-weight: normal;
@@ -26,4 +27,12 @@
 
 .sobre p{
     font-size: 16px;
+    line-height: 30px;
 }
+
+.sobre b{
+    font-weight: normal;
+    color: #866f97;
+}
+
+

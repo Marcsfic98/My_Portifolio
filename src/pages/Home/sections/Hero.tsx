@@ -8,9 +8,15 @@ const Hero= ()=> {
       <>
         <div className="sobre">
             <div className="container">
-                <h2>Marcos Ribeiro</h2>
+                <h2><b>Olá , sou  </b>Marcos Ribeiro</h2>
                 <h3>MARCSFIC98@GMAIL.COM</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quasi minus nobis eveniet at labore numquam beatae aspernatur esse velit, aut deleniti! Commodi distinctio tempore odit assumenda nihil ex labore.</p>
+                <p>Como amante de jogos , eletrônicos e tecnologia , desde pequeno sonhava em trabalhar na área . E estudando criei um apreço maior ainda pelo ramo da programação e a vertente do Front-End que dá vida e personalidade as páginas e aplicativos.
+
+Almejo a oportunidade de ingressar na carreira de desenvolvedor e poder trabalhar com o que amo . 
+Em busca de novos desafios para testar meus conhecimentos , habilidades e aprender muito mais sobre essa área maravilhosa! 
+
+Atualmente curso Análise e Desenvolvimento de Sistemas e estudo sobre a Área de Front - End em cursos … 
+Almejo me especializar no desenvolvimento Móbile </p>
             </div>
         </div>
       </>

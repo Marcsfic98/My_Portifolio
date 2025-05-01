@@ -1,6 +1,7 @@
 .tecnologias{
     background-color: rgb(212, 217, 219);
     width: 80%;
+    /*display: flex;*/
     display: flex;
     text-align: left;
 }
@@ -11,7 +12,8 @@
     width: 100%;
 }
 
-.tecnologias h2{
+.tecnologias .container h2{
+    text-align: left;
     font-size: 45px;
     color: #38055d;
     font-weight: normal;

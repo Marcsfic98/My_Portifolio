@@ -7,15 +7,86 @@
 
 .container{
     margin: auto;
-    padding: 0 4%;
+    padding: 0 2%;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 40px;
+    color: #38055d;
+    font-weight: normal;
+    padding: 40px 0;
+}
+
+.border{
+    border: 8px solid  rgb(212, 217, 219);
 }
 
 
 .projeto_box {
-    width:30% ;
-    margin: 10% 1%; 
     height: 500px;
-    background-color: white;
+    margin: 10px 0;
+    background-color: rgb(242, 247, 249);
     border: 3px solid #38055d;
-    float: left;
+    
+  }
+
+.projeto_gif{
+    width: 92%;
+    margin: auto;
+    height: 50%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.gif1{
+    background-image: url("../../../assets/Rmcars.gif");
+}
+
+.gif2{
+    background-image: url("../../../assets/amazon.gif");
+}
+
+.gif3{
+    background-image: url("../../../assets/monguilhott.gif");
+}
+
+.gif4{
+    background-image: url("../../../assets/Deshboard.gif");
+}
+
+.gif5{
+    background-image: url("../../../assets/agenciaCOde.gif");
+}
+
+.gif6{
+    background-image: url("../../../assets/game.gif");
+}
+
+.projeto_info{
+    text-align: center;
+}
+
+.projeto_info h3{
+    margin: 15px 0;
+    font-size: 25px;
+    color: #38055d;
+}
+
+.projeto_info p{
+    padding: 0 30px;
+    font-size: 17px;
+}
+
+.projeto_tec{
+    margin: 40px auto;
+    text-align: center;
+}
+
+.projeto_tec a{
+    font-size: 25px;
+    margin:0 15px;
+    text-decoration: none;
+    color: #38055d;
 }
