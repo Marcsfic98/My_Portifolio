@@ -1,0 +1,29 @@
+.sobre{
+    background-color: rgb(212, 217, 219);
+    width: 80%;
+    display: flex;
+    
+}
+
+.container{
+    margin: auto;
+    padding: 0 4%;
+}
+
+.sobre h2{
+    font-size: 45px;
+    color: #38055d;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.sobre h3{
+    font-size: 16PX;
+    font-weight: normal;
+    color: #866f97;
+    margin-bottom: 40px;
+}
+
+.sobre p{
+    font-size: 16px;
+}

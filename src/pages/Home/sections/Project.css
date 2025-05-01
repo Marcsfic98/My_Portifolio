@@ -1,0 +1,21 @@
+.project{
+    background-color: rgb(212, 217, 219);
+    width: 80%;
+  display: block;
+    
+}
+
+.container{
+    margin: auto;
+    padding: 0 4%;
+}
+
+
+.projeto_box {
+    width:30% ;
+    margin: 10% 1%; 
+    height: 500px;
+    background-color: white;
+    border: 3px solid #38055d;
+    float: left;
+}
