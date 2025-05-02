@@ -28,7 +28,7 @@
     margin: 10px 0;
     background-color: rgb(242, 247, 249);
     border: 3px solid #38055d;
-    
+    position: relative;
   }
 
 .projeto_gif{
@@ -82,6 +82,9 @@
 .projeto_tec{
     margin: 40px auto;
     text-align: center;
+    position: absolute;
+    bottom: -55px;
+    left: 110px;
 }
 
 .projeto_tec a{
@@ -89,4 +92,14 @@
     margin:0 15px;
     text-decoration: none;
     color: #38055d;
+}
+
+@media screen and (max-width:768px) {
+    .project{
+        width: 100%;
+        height: 100vh;
+        padding-top:50px ;
+    }
+
+
 }

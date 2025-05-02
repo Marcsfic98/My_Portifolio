@@ -1,15 +1,18 @@
 .home{
     background-color: #38055d;
     width:20% ;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     padding: 171px 2%;
+ 
 }
 
+
 .home .img{
-    
+
     width: 100%;
     height: 200px;
     max-width: 200px;
@@ -38,3 +41,28 @@
 .home a.active { /* Estilo para o link ativo dentro de .home */
     color: white;
   }
+
+
+.menu_mobile{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    z-index: 999;
+}
+  @media screen and (max-width:768px) {
+    .home {
+        display: none;
+        width: 70%;
+        z-index: 5;
+        padding: 130px 2%;
+        position: absolute;
+      }
+      .home.show {
+        display: flex; /* ou block, conforme necessário */
+      }
+
+      .home .img{
+        
+      }
+}

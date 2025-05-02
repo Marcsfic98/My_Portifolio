@@ -6,7 +6,9 @@ const Hero= ()=> {
 
     return (
       <>
+      
         <div className="sobre">
+       
             <div className="container">
                 <h2><b>Olá , sou  </b>Marcos Ribeiro</h2>
                 <h3>MARCSFIC98@GMAIL.COM</h3>
