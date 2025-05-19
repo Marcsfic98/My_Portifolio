@@ -6,7 +6,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import"./Project.css"
-const Project = (modo) => {
+import React from "react";
+
+// 1️⃣  Tipo das props
+interface HeroProps {
+  modo: "sol" | "lua";   // se preferir string simples: string
+}
+
+// 2️⃣  Desestruturação das props
+const Project: React.FC<HeroProps> = ({ modo }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -35,7 +43,7 @@ const Project = (modo) => {
 
   return (
     
-    <div  className={`project ${modo.modo ==='sol' ? 'b' : "w"}`}>
+    <div  className={`project ${modo ==='sol' ? 'b' : "w"}`}>
       <div className="container">
         <h2>Alguns Projetos:</h2>
         <Slider {...settings}>

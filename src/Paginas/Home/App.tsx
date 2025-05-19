@@ -1,10 +1,10 @@
 
-import "./App.css"
-import "../Menu/Menu.css"
+import "./App.css";
+import "../Menu/Menu.css";
 import Hero from "../Sobre/Hero";
 import Tec from "../Tecnologias/Tecnologia";
 import Project from "../Project/Project";
-import Educacao from "../Educacao/Educacao"
+import Educacao from "../Educacao/Educacao";
 import  { useState, useEffect} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +17,7 @@ const App = ()=> {
   
   const [menuOpen, setMenuOpen] = useState(false); // Novo estado para controle do menu
   const [nomeComponente, setNomeComponente] = useState("Hero") ;
-  const [modo , setModo ] = useState('sol');
+  const [modo, setModo] = useState<'sol' | 'lua'>('sol');
   
 
 
@@ -106,28 +106,28 @@ const App = ()=> {
         <div className="img"></div>
         <br />
             <a id="Hero" href="#" className={activeLink === "Hero" ? 'active' : ''} onClick={(e) => {
-              e.defaultPrevented;
+              e.preventDefault();
               mostraComponente("Hero", "Hero")
               handleLinkClick("Hero", "Hero")
             }}>SOBRE</a>
 
 
             <a id="Tec" href="#" className={activeLink === "Tec" ? 'active' : ''} onClick={(e) => {
-              e.defaultPrevented;
+              e.preventDefault();
               mostraComponente("Tec", "Tec")
               handleLinkClick("Tec", "Tec")
             }}>TECNOLOGIAS</a>
 
 
             <a id="Project" href="#" className={activeLink === "Project" ? 'active' : ''} onClick={(e) => {
-              e.defaultPrevented;
+              e.preventDefault();
               mostraComponente("Project", "Project")
               handleLinkClick("Project", "Project")
             }}>PROJETOS</a>
 
 
             <a id="Educacao" href="#" className={activeLink === "Educacao" ? 'active' : ''} onClick={(e) => {
-              e.defaultPrevented;
+              e.preventDefault();
               mostraComponente("Educacao", "Educacao")
               handleLinkClick("Educacao", "Educacao")
             }}>EDUCAÇÃO</a>
@@ -157,7 +157,7 @@ const App = ()=> {
       ) : (
         // Em telas maiores, mantém a disposição original ou como desejar
         <>
-          {nomeComponente === "Hero" && <Hero modo={modo} />}
+          {nomeComponente === "Hero" && <Hero modo ={modo} />}
           {nomeComponente === "Tec" && <Tec modo={modo} />}
           {nomeComponente === "Project" && <Project modo={modo} />}
           {nomeComponente === "Educacao" && <Educacao modo={modo} />}

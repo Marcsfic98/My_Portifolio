@@ -8,13 +8,20 @@ import { faSass } from "@fortawesome/free-brands-svg-icons"
 import { faLess } from "@fortawesome/free-brands-svg-icons"
 import { faGit } from "@fortawesome/free-brands-svg-icons"
 import "./Tecnologia.css"
+import React from "react";
 
-const Tec = (modo)=> {
+// 1️⃣  Tipo das props
+interface HeroProps {
+  modo: "sol" | "lua";   // se preferir string simples: string
+}
+
+// 2️⃣  Desestruturação das props
+const Tec: React.FC<HeroProps> = ({ modo }) => {
   
 
     return (
       <>
-        <div className={`tecnologias ${modo.modo ==='sol' ? 'b' : "w"}`}>
+        <div className={`tecnologias ${modo ==='sol' ? 'b' : "w"}`}>
             <div className="container">
                 <h2>TECNOLOGIAS</h2>
                 <h3>LINGUAGENS DE PROGRAMAÇÃO E FERRAMENTAS</h3>

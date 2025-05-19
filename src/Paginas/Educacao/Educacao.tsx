@@ -3,7 +3,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Educacao = (modo)=> {
+import React from "react";
+
+// 1️⃣  Tipo das props
+interface HeroProps {
+  modo: "sol" | "lua";   // se preferir string simples: string
+}
+
+// 2️⃣  Desestruturação das props
+const Educacao : React.FC<HeroProps> = ({ modo }) =>{
     const settings = {
         dots: true,
         infinite: true,
@@ -32,7 +40,7 @@ const Educacao = (modo)=> {
 
     return (
       <>
-       <div className={`educacao ${modo.modo ==='sol' ? 'b' : "w"}`}>
+       <div className={`educacao ${modo ==='sol' ? 'b' : "w"}`}>
             <div className="container">
                 
                 <div className="Formacao">
