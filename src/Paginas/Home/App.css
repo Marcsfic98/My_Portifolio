@@ -205,13 +205,13 @@
       }
 
       .w.pages a{
-        margin: 0 10px;
+        margin: 6px 0;
         font-size: 16px;
     }
-    .b.pages a{
-        margin: 6px 10px;
-        font-size: 16px;
-    }
+        .b.pages a{
+            margin: 6px 0;
+            font-size: 16px;
+        }
 
     .home::before{
         height: 130px;
@@ -229,15 +229,10 @@
 
   
   
-  @media screen and (max-Width:328px) {
+  @media screen and (max-Width:400px) {
    
 
-    .w.pages a{
-       margin: 0 46px;
-    }
-    .b.pages a{
-        margin: 0 30px;
-    }
+    
 
     .home::before{
         height: 90px;
@@ -247,6 +242,13 @@
         height: 90px;
        
       }
+
+      .w.pages a{
+        margin-left: 135px;
+    }
+        .b.pages a{
+            margin-left: 135px;
+        }
       
   }
   

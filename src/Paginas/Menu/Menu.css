@@ -37,12 +37,14 @@
 }
   @media screen and (max-width:768px) {
     .home {
+      display: none;
        width: 100vw;
-       height: 20vw;
+       height: 40vw;
        position: fixed;
-       flex-direction: row;
+       flex-direction: column;
       justify-content: center;
-      z-index: 999;
+      align-items: center;
+      z-index: 1;
       border-right: 0px;
       border-bottom: 4px solid #1e2029;
       }
@@ -50,13 +52,26 @@
       .icon2{
         color: #4a1e6b ;
         font-size: 30px;
-        position: absolute;
-        
+        position: absolute; 
         cursor: pointer;
-        bottom:38%;
-        left:90%;
-       
+        bottom: 75%;
+        left: 85%;
       }
+
+      .menu_mobile{
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        color: white;
+        z-index: 999;
+        color:  #4a1e6b;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .show{
+      display: flex;
+    }
 
       
 }

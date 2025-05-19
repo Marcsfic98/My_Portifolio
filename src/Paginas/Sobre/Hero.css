@@ -31,12 +31,13 @@
 @media screen and (max-width:768px) {
     .sobre{
         width: 100vw;
-        height: 100vh;
-        padding-top: 80px;
+        height: 150vh;
+       
     }
 
     .sobre .container .img{
         display: block;
+        
     }
 
     
