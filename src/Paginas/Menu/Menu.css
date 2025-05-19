@@ -2,12 +2,13 @@
     width:20% ;
     height: 100vh;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 171px 2%;
+    padding: 0 2%;
     position: relative;
-    border-right: 4px solid #1e2029;
+    min-height: 20vw;
 }
 
 .icon2{
@@ -22,33 +23,37 @@
 
 
 
-.home a.active { /* Estilo para o link ativo dentro de .home */
-    color: white;
-  }
-
 
 .menu_mobile{
-  display: none;
+    display: none;
     position: absolute;
     top: 15px;
     left: 15px;
     color: white;
     z-index: 999;
+    color:  #4a1e6b;
+    font-size: 25px;
 }
   @media screen and (max-width:768px) {
     .home {
-        display: none;
-        width: 70%;
-        z-index: 5;
-        padding: 130px 2%;
-        position: absolute;
-      }
-      .home.show {
-        display: flex; /* ou block, conforme necessário */
+       width: 100vw;
+       height: 20vw;
+       position: fixed;
+       flex-direction: row;
+      justify-content: left;
+      z-index: 999;
       }
 
-      .menu_mobile{
-        display: block;
-      
+      .icon2{
+        color: #4a1e6b ;
+        font-size: 30px;
+        position: absolute;
+        
+        cursor: pointer;
+        bottom:38%;
+        left:90%;
+       
       }
+
+      
 }
