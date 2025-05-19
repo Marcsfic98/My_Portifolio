@@ -9,6 +9,7 @@
     padding: 0 2%;
     position: relative;
     min-height: 20vw;
+    border-right: 4px solid #1e2029;
 }
 
 .icon2{
@@ -42,6 +43,8 @@
        flex-direction: row;
       justify-content: left;
       z-index: 999;
+      border-right: 0px;
+      border-bottom: 4px solid #1e2029;
       }
 
       .icon2{

@@ -7,7 +7,7 @@
 
 .b {
     background-color: #17181f;
-    border-right: 4px solid #1e2029;
+    
 }
 
 
@@ -93,7 +93,6 @@
 
 .w{
     background-color: #d5d9db;
-    border-right: 4px solid #83567a;
 }
 
 .w2{
@@ -226,9 +225,6 @@
         
       }
 
-      .b {
-        border-right: 0;
-        border-bottom: 4px solid #1e2029;
-    }
+     
   }
   
