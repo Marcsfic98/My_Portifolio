@@ -1,5 +1,5 @@
 .tecnologias{
-    background-color: rgb(212, 217, 219);
+    
     width: 80%;
     /*display: flex;*/
     display: flex;
@@ -14,16 +14,10 @@
 
 .tecnologias .container h2{
     text-align: left;
-    font-size: 45px;
-    color: #38055d;
-    font-weight: normal;
     margin-bottom: 30px;
 }
 
 .tecnologias h3{
-    font-size: 16PX;
-    font-weight: normal;
-    color: #866f97;
     margin-bottom: 40px;
 }
 
@@ -31,12 +25,7 @@
     margin-bottom: 12px;
 }
 
-.icon{
-    font-size: 30px;
-    margin-right: 30px;
-    color: #38055d;
-    margin-bottom: 40px;
-}
+
 
 @media screen and (max-width:768px) {
     .tecnologias{

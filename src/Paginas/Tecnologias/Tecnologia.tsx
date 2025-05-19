@@ -9,12 +9,12 @@ import { faLess } from "@fortawesome/free-brands-svg-icons"
 import { faGit } from "@fortawesome/free-brands-svg-icons"
 import "./Tecnologia.css"
 
-const Tec = ()=> {
+const Tec = (modo)=> {
   
 
     return (
       <>
-        <div className="tecnologias">
+        <div className={`tecnologias ${modo.modo ==='sol' ? 'b' : "w"}`}>
             <div className="container">
                 <h2>TECNOLOGIAS</h2>
                 <h3>LINGUAGENS DE PROGRAMAÇÃO E FERRAMENTAS</h3>

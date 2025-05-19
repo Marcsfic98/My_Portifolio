@@ -1,13 +1,13 @@
 import "./Hero.css"
 
 
-const Hero= ()=> {
+const Hero= (modo)=> {
   
-
     return (
       <>
       
-        <div className="sobre">
+      
+        <div  className={`sobre  ${modo.modo ==='sol' ? 'b' : "w"} `}>
        
             <div className="container">
                 <h2><b>Olá , sou  </b>Marcos Ribeiro</h2>

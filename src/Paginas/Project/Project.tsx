@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import"./Project.css"
-const Project = () => {
+const Project = (modo) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -34,7 +34,7 @@ const Project = () => {
   };
 
   return (
-    <div className="project">
+    <div className={`project ${modo.modo ==='sol' ? 'b' : "w"}`}>
       <div className="container">
         <h2>Alguns Projetos:</h2>
         <Slider {...settings}>

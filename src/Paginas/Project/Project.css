@@ -1,7 +1,6 @@
 .project{
-    background-color: rgb(212, 217, 219);
     width: 80%;
-  display: block;
+    display: block;
     
 }
 
@@ -12,28 +11,21 @@
 
 .container h2{
     text-align: center;
-    font-size: 40px;
-    color: #38055d;
-    font-weight: normal;
     padding: 40px 0;
 }
 
-.border{
-    border: 8px solid  rgb(212, 217, 219);
-}
 
 
 .projeto_box {
     height: 500px;
     margin: 10px 0;
-    background-color: rgb(242, 247, 249);
     border: 3px solid #38055d;
     position: relative;
   }
 
 .projeto_gif{
     width: 92%;
-    margin: auto;
+    margin: 20px auto;
     height: 50%;
     background-position: center;
     background-size: 100% 100%;
@@ -41,27 +33,27 @@
 }
 
 .gif1{
-    background-image: url("../../../assets/Rmcars.gif");
+    background-image: url("../../assets/projetos/Rmcars.gif");
 }
 
 .gif2{
-    background-image: url("../../../assets/amazon.gif");
+    background-image: url("../../assets/projetos/amazon.gif");
 }
 
 .gif3{
-    background-image: url("../../../assets/monguilhott.gif");
+    background-image: url("../../assets/projetos/monguilhott.gif");
 }
 
 .gif4{
-    background-image: url("../../../assets/Deshboard.gif");
+    background-image: url("../../assets/projetos/Deshboard.gif");
 }
 
 .gif5{
-    background-image: url("../../../assets/agenciaCOde.gif");
+    background-image: url("../../assets/projetos/agenciaCOde.gif");
 }
 
 .gif6{
-    background-image: url("../../../assets/game.gif");
+    background-image: url("../../assets/projetos/game.gif");
 }
 
 .projeto_info{
@@ -71,7 +63,6 @@
 .projeto_info h3{
     margin: 15px 0;
     font-size: 25px;
-    color: #38055d;
 }
 
 .projeto_info p{
@@ -90,8 +81,6 @@
 .projeto_tec a{
     font-size: 25px;
     margin:0 15px;
-    text-decoration: none;
-    color: #38055d;
 }
 
 @media screen and (max-width:768px) {

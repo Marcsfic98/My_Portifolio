@@ -1,25 +1,31 @@
 
 import "./App.css"
-import "../src/pages/Home/Menu.css"
-import Hero from "./pages/Home/sections/Hero";
-import Tec from "./pages/Home/sections/Tecnologia";
-import Project from "./pages/Home/sections/Project";
-import Educacao from "./pages/Home/sections/Educacao"
+import "../Menu/Menu.css"
+import Hero from "../Sobre/Hero";
+import Tec from "../Tecnologias/Tecnologia";
+import Project from "../Project/Project";
+import Educacao from "../Educacao/Educacao"
 import  { useState} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 
 const App = ()=> {
 
   
-   
-  
   const [menuOpen, setMenuOpen] = useState(false); // Novo estado para controle do menu
   const [nomeComponente, setNomeComponente] = useState("Hero") ;
+  const [modo , setModo ] = useState('sol');
 
+  const modoSol = () =>{
+    setModo('lua');
+  }
+  const modoLua = () =>{
+    setModo('sol');
+  }
+  
   const mostraComponente = (nomeComponenteSelecionado:string, idDoLink:string)=>{
 
     setNomeComponente(nomeComponenteSelecionado);
@@ -42,13 +48,14 @@ const App = ()=> {
   };
 
 
+
   return (
     <>
    <i className="menu_mobile" onClick={toggleMenu}>
         <FontAwesomeIcon className="icon" icon={faBars} />
       </i>
-      <div className={`home ${menuOpen ? 'show' : ''}`}>
-
+      <div className={` home pages ${modo === 'sol'? 'b' : "w"} ${menuOpen ? 'show' : ''}`}>
+        
         <div className="img"></div>
         <br />
         <a id="Hero" href="#" className={activeLink === "Hero" ? 'active' : ''} onClick={(e) => {
@@ -71,30 +78,42 @@ const App = ()=> {
           mostraComponente("Educacao", "Educacao")
           handleLinkClick("Educacao", "Educacao")
         }}>EDUCAÇÃO</a>
+
+         {
+            modo === 'sol' &&(
+            <a onClick={modoSol}><FontAwesomeIcon  className="icon2 sol" icon={faSun} /></a>
+            )
+         }
+
+          {
+            modo ==='lua' &&(
+              <a onClick={modoLua}><FontAwesomeIcon className="icon2 lua" icon={faMoon} /></a>
+            )
+          }
       </div>
 
 
       {
         nomeComponente === "Hero" && (
-            <Hero/>
+            <Hero modo={modo}/>
         )
       }
 
       {
           nomeComponente === "Tec" && (
-            <Tec/>
+            <Tec   modo={modo}/>
           )
         }
 
   {
         nomeComponente === "Project" && (
-          <Project/>
+          <Project  modo={modo}/>
         )
       }
 
 {
         nomeComponente === "Educacao" && (
-          <Educacao/>
+          <Educacao  modo={modo}/>
         )
       }
 

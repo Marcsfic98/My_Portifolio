@@ -1,5 +1,4 @@
 .sobre{
-    background-color: rgb(212, 217, 219);
     width: 80%;
     display: flex;
 }
@@ -11,16 +10,10 @@
 
  .sobre .container h2{
     text-align: left;
-    font-size: 45px;
-    color: #38055d;
-    font-weight: normal;
     margin-bottom: 8px;
 }
 
 .sobre h3{
-    font-size: 16PX;
-    font-weight: normal;
-    color: #866f97;
     margin-bottom: 40px;
 }
 
@@ -29,10 +22,7 @@
     line-height: 30px;
 }
 
-.sobre b{
-    font-weight: normal;
-    color: #866f97;
-}
+
 
 
 @media screen and (max-width:768px) {

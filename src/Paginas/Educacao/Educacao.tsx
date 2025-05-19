@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const Educacao = ()=> {
+const Educacao = (modo)=> {
     const settings = {
         dots: true,
         infinite: true,
@@ -32,11 +32,11 @@ const Educacao = ()=> {
 
     return (
       <>
-       <div className="educacao">
+       <div className={`educacao ${modo.modo ==='sol' ? 'b' : "w"}`}>
             <div className="container">
                 
                 <div className="Formacao">
-                    <h3>Formação :</h3>
+                    <h2>Formação :</h2>
                     <p>cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 1° Periodo</p>
                 </div>
                 
@@ -44,25 +44,25 @@ const Educacao = ()=> {
                     <h3>Certificados:</h3>
                     <Slider {...settings}>
                     <div className="cursos_box">
-                        <div className="cursos_wraper c1">
+                        <div className="cursos_wraper border c1">
 
                         </div>
                     </div>
 
                     <div className="cursos_box">
-                        <div className="cursos_wraper c2">
+                        <div className="cursos_wraper  border c2">
 
                         </div>
                     </div>
 
                     <div className="cursos_box">
-                        <div className="cursos_wraper c3">
+                        <div className="cursos_wraper  border c3">
 
                         </div>
                     </div>
 
                     <div className="cursos_box">
-                        <div className="cursos_wraper c4">
+                        <div className="cursos_wraper  border c4">
 
                         </div>
                     </div>
