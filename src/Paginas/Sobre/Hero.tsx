@@ -10,6 +10,7 @@ const Hero= (modo)=> {
         <div  className={`sobre  ${modo.modo ==='sol' ? 'b' : "w"} `}>
        
             <div className="container">
+                   <div className="img"></div>
                 <h2><b>Olá , sou  </b>Marcos Ribeiro</h2>
                 <h3>MARCSFIC98@GMAIL.COM</h3>
                 <p>Como amante de jogos , eletrônicos e tecnologia , desde pequeno sonhava em trabalhar na área . E estudando criei um apreço maior ainda pelo ramo da programação e a vertente do Front-End que dá vida e personalidade as páginas e aplicativos.

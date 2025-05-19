@@ -12,7 +12,6 @@
 
 
 #root{
- 
     display: flex;
     overflow: hidden;
 }
@@ -206,12 +205,12 @@
       }
 
       .w.pages a{
-        margin: 6px 10px;
-        font-size: 14px;
+        margin: 0 10px;
+        font-size: 16px;
     }
     .b.pages a{
         margin: 6px 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .home::before{
@@ -226,5 +225,28 @@
       }
 
      
+  }
+
+  
+  
+  @media screen and (max-Width:328px) {
+   
+
+    .w.pages a{
+       margin: 0 46px;
+    }
+    .b.pages a{
+        margin: 0 30px;
+    }
+
+    .home::before{
+        height: 90px;
+      }
+      .home::after{
+      
+        height: 90px;
+       
+      }
+      
   }
   

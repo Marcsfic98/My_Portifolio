@@ -21,6 +21,9 @@
     font-size: 16px;
     line-height: 30px;
 }
+.sobre .container .img{
+    display: none;
+}
 
 
 
@@ -29,6 +32,11 @@
     .sobre{
         width: 100vw;
         height: 100vh;
+        padding-top: 80px;
+    }
+
+    .sobre .container .img{
+        display: block;
     }
 
     

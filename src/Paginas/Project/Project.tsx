@@ -34,7 +34,8 @@ const Project = (modo) => {
   };
 
   return (
-    <div className={`project ${modo.modo ==='sol' ? 'b' : "w"}`}>
+    
+    <div  className={`project ${modo.modo ==='sol' ? 'b' : "w"}`}>
       <div className="container">
         <h2>Alguns Projetos:</h2>
         <Slider {...settings}>

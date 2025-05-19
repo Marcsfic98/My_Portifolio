@@ -41,7 +41,7 @@
        height: 20vw;
        position: fixed;
        flex-direction: row;
-      justify-content: left;
+      justify-content: center;
       z-index: 999;
       border-right: 0px;
       border-bottom: 4px solid #1e2029;

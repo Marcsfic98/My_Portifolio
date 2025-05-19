@@ -18,6 +18,34 @@ const App = ()=> {
   const [menuOpen, setMenuOpen] = useState(false); // Novo estado para controle do menu
   const [nomeComponente, setNomeComponente] = useState("Hero") ;
   const [modo , setModo ] = useState('sol');
+  
+
+
+  useEffect(() => {
+    if(nomeComponente === 'Project'){
+      const element = document.querySelector('.project');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    }else if(nomeComponente === 'Tec'){
+      const element = document.querySelector('.tecnologias');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }else if(nomeComponente === 'Educacao'){
+      const element = document.querySelector('.educacao');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }else if(nomeComponente === 'Hero'){
+      const element = document.querySelector('.sobre');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [nomeComponente]);
+
+  
 
    // Estado para controlar se a tela é pequena
    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -142,5 +170,3 @@ const App = ()=> {
 
 
 export default App
-
-
