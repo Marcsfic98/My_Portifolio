@@ -30,13 +30,7 @@ const Hero: React.FC<HeroProps> = ({ modo }) => {
 
         
 
-        <h3>Como amante de jogos , eletrônicos e tecnologia , desde pequeno sonhava em trabalhar na área . E estudando criei um apreço maior ainda pelo ramo da programação e a vertente do Front-End que dá vida e personalidade as páginas e aplicativos.
-
-            Almejo a oportunidade de ingressar na carreira de desenvolvedor e poder trabalhar com o que amo . 
-            Em busca de novos desafios para testar meus conhecimentos , habilidades e aprender muito mais sobre essa área maravilhosa! 
-
-            Atualmente curso Análise e Desenvolvimento de Sistemas e estudo sobre a Área de Front - End em cursos … 
-            Almejo me especializar no desenvolvimento Móbile </h3>
+        <h3>Sou um desenvolvedor front-end apaixonado por criar interfaces intuitivas e eficientes. Tenho proficiência com tecnologias como JavaScript e TypeScript, o que me permite desenvolver aplicações robustas, seguras e de alta performance.<br/><br/> Sou fã do React e React Native, frameworks que utilizo para construir experiências de usuário modernas tanto para web quanto para dispositivos móveis. Meu foco é transformar ideias em soluções visuais atraentes e funcionais, sempre buscando melhorar a usabilidade e a performance dos projetos em que atuo. Estou constantemente atualizado com as tendências do mercado e buscando aprimorar minhas habilidades, especialmente no desenvolvimento mobile e web.<br/><br/> Meu objetivo é me tornar um especialista nessas áreas, entregando produtos de alta qualidade e que atendam às necessidades dos usuários. Acredito que a combinação de criatividade, conhecimento técnico e atenção aos detalhes é fundamental para criar aplicações que façam a diferença. Tenho facilidade para aprender novas tecnologias e trabalhar em equipe, sempre buscando colaborar e contribuir com o sucesso dos projetos.<br/><br/> Estou motivado a evoluir na minha carreira, enfrentando novos desafios e conquistando resultados cada vez melhores. Para mim, o desenvolvimento front-end é uma paixão e uma oportunidade de transformar ideias em realidade digital. Estou animado para continuar aprendendo e crescendo como profissional na área de tecnologia. </h3>
 
             <div className="link">
           <a target="_blank" href="https://github.com/Marcsfic98"><FontAwesomeIcon className="icon"  icon={faGithub} /></a>
