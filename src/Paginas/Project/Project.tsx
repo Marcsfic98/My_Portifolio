@@ -8,13 +8,14 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import"./Project.css"
 import React from "react";
 
-// 1️⃣  Tipo das props
+
 interface HeroProps {
-  modo: "sol" | "lua";   // se preferir string simples: string
+  modo: "sol" | "lua";
+  lenguage:"br" | "eua";
 }
 
-// 2️⃣  Desestruturação das props
-const Project: React.FC<HeroProps> = ({ modo }) => {
+
+const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -45,7 +46,7 @@ const Project: React.FC<HeroProps> = ({ modo }) => {
   
     <div  className={`project ${modo ==='sol' ? 'b' : "w"}`}>
       <div className="container">
-        <h2>Alguns Projetos:</h2>
+        <h2>{lenguage === "br" ? "Alguns Projetos:" : "Some Projects:"}</h2>
         <Slider {...settings}>
             <div className='border'>
               <div className="projeto_box ">

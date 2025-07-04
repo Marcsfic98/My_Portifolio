@@ -5,13 +5,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import React from "react";
 
-// 1️⃣  Tipo das props
+
 interface HeroProps {
-  modo: "sol" | "lua";   // se preferir string simples: string
+  modo: "sol" | "lua"; 
+  lenguage:"br" | "eua";
 }
 
-// 2️⃣  Desestruturação das props
-const Educacao : React.FC<HeroProps> = ({ modo }) =>{
+
+const Educacao : React.FC<HeroProps> = ({ modo , lenguage }) =>{
     const settings = {
         dots: true,
         infinite: true,
@@ -44,8 +45,8 @@ const Educacao : React.FC<HeroProps> = ({ modo }) =>{
             <div className="container">
                 
                 <div className="Formacao">
-                    <h2>Formação :</h2>
-                    <p>Cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 2° Periodo</p>
+                    <h2>{lenguage === "br" ? "Formação :":"TRAINING"}</h2>
+                    <p>{lenguage === "br" ? "Cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 2° Periodo":"Studying systems analysis and development | Mauricio de Nassau University | 2nd Period"}</p>
                 </div>
                 
                 <div className="cursos">

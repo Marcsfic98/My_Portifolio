@@ -9,27 +9,27 @@ import {
   faLess,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
-// Importe faCss3 diretamente, se não for um problema (como no seu código original)
-// import { faCss3 } from "@fortawesome/free-brands-svg-icons/faCss3"; // Se preferir manter este import específico
+
 import "./Tecnologia.css";
 import React from "react";
-import Slider from "react-slick"; // Importe o Slider
+import Slider from "react-slick"; 
 
 interface HeroProps {
   modo: "sol" | "lua";
+  lenguage:"br" | "eua";
 }
 
-const Tec: React.FC<HeroProps> = ({ modo }) => {
+const Tec: React.FC<HeroProps> = ({ modo , lenguage}) => {
   const settings = {
-    dots: false, // Geralmente removemos para carrosséis contínuos
+    dots: false, 
     infinite: true,
-    speed: 2000, // Velocidade da transição. Experimente valores como 500, 300, 0
+    speed: 2000,
     slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0, // Essencial para "sem delay" - o slide não para
-    cssEase: "linear", // Essencial para fluidez constante
-    arrows: false, // Remova os botões laterais se desejar
+    autoplaySpeed: 0, 
+    cssEase: "linear",
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -74,8 +74,17 @@ const Tec: React.FC<HeroProps> = ({ modo }) => {
     <>
       <div className={`tecnologias ${modo === "sol" ? "b" : "w"}`}>
         <div className="container">
-          <h2>TECNOLOGIAS</h2>
-          <h3>LINGUAGENS DE PROGRAMAÇÃO E FERRAMENTAS</h3>
+          {
+            lenguage === "br"?(
+              <>
+                <h2>TECNOLOGIAS:</h2>
+                <h3>LINGUAGENS DE PROGRAMAÇÃO E FERRAMENTAS</h3>
+              </>
+            ):<>
+                <h2>TECHNOLOGIES:</h2>
+                <h3>PROGRAMMING LANGUAGES AND TOOLS</h3>
+              </>
+          }
           <div className="logos">
             <Slider {...settings}>
               

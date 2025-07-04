@@ -5,17 +5,20 @@ import React from "react";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
-// 1️⃣  Tipo das props
+
 interface HeroProps {
   modo: "sol" | "lua";
+  lenguage:"br" | "eua";
 }
 
 
-const Hero: React.FC<HeroProps> = ({ modo }) => {
+const Hero: React.FC<HeroProps> = ({ modo ,lenguage }) => {
   return (
     <div  className={`sobre  ${modo ==='sol' ? 'b' : "w"} `}>
        
-    <div className="container">
+       {
+        lenguage === "br" &&(
+           <div className="container">
            <div className="img"></div>
         <h2><b>Olá , sou  </b>
           <span>
@@ -39,7 +42,43 @@ const Hero: React.FC<HeroProps> = ({ modo }) => {
         </div>
         
     </div>
-</div>
+        )
+        
+       }
+
+       {
+        lenguage === "eua" &&(
+           <div className="container">
+           <div className="img"></div>
+        <h2><b>Hello, I am</b>
+          <span>
+            <span>Marcos Ribeiro</span>
+            <span>Front-End Developer</span>
+            <span>Web Developer</span>
+            <span>Mobile Developer</span>
+            <span>Programmer</span>
+            
+          </span></h2>
+       
+
+        
+
+            <h3>I'm a front-end developer passionate about creating intuitive and efficient interfaces. I'm proficient in technologies like JavaScript and TypeScript, which allows me to develop robust, secure, and high-performance applications.<br/><br/> I'm a fan of React and React Native, frameworks I use to build modern user experiences for both web and mobile devices. My focus is to transform ideas into attractive and functional visual solutions, always seeking to improve the usability and performance of the projects I work on. I'm constantly updated with market trends and seeking to improve my skills, especially in mobile and web development.<br/><br/> My goal is to become a specialist in these areas, delivering high-quality products that meet users' needs. I believe that the combination of creativity, technical knowledge, and attention to detail is fundamental to creating applications that make a difference. I have an aptitude for learning new technologies and working in a team, always seeking to collaborate and contribute to the success of projects.<br/><br/> I'm motivated to evolve in my career, facing new challenges and achieving increasingly better results. For me, front-end development is a passion and an opportunity to transform ideas into digital reality. I'm excited to continue learning and growing as a professional in the technology field.</h3>
+
+            <div className="link">
+          <a target="_blank" href="https://github.com/Marcsfic98"><FontAwesomeIcon className="icon"  icon={faGithub} /></a>
+          <a target="_blank" href="https://www.linkedin.com/in/marcos-alexandre-129b93272/"><FontAwesomeIcon className="icon"   icon={faLinkedin} /></a>
+          <a target="_blank" href="mailto:marcsfic98@gmail.com"><FontAwesomeIcon className="icon"   icon={faEnvelope}/></a>
+        </div>
+        
+    </div>
+        )
+        
+       }
+    
+
+       
+  </div>
   );
 };
 

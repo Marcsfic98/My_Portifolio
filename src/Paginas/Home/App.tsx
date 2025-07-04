@@ -1,3 +1,4 @@
+import  { useState, useEffect} from 'react';
 
 import "./App.css";
 import "../Menu/Menu.css";
@@ -5,7 +6,7 @@ import Hero from "../Sobre/Hero";
 import Tec from "../Tecnologias/Tecnologia";
 import Project from "../Project/Project";
 import Educacao from "../Educacao/Educacao";
-import  { useState, useEffect} from 'react';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-solid-svg-icons";
@@ -15,10 +16,10 @@ import { faMoon } from "@fortawesome/free-solid-svg-icons";
 const App = ()=> {
 
   
-  const [menuOpen, setMenuOpen] = useState(false); // Novo estado para controle do menu
+  const [menuOpen, setMenuOpen] = useState(false); 
   const [nomeComponente, setNomeComponente] = useState("Hero") ;
   const [modo, setModo] = useState<'sol' | 'lua'>('sol');
-  
+  const [lenguage, setLenguage] = useState <"br"| "eua">("br")
 
 
   useEffect(() => {
@@ -47,10 +48,10 @@ const App = ()=> {
 
   
 
-   // Estado para controlar se a tela é pequena
+   
    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
-   // Detectar mudanças no tamanho da janela
+   
    useEffect(() => {
      const handleResize = () => {
        setIsMobile(window.innerWidth <= 768);
@@ -58,7 +59,7 @@ const App = ()=> {
  
      window.addEventListener('resize', handleResize);
  
-     // Limpar o evento ao desmontar o componente
+     
      return () => {
        window.removeEventListener('resize', handleResize);
      };
@@ -79,16 +80,15 @@ const App = ()=> {
     setActiveLink(idDoLink);
   }
 
-  const [activeLink, setActiveLink] = useState('Hero'); // Novo estado para rastrear o link ativo
+  const [activeLink, setActiveLink] = useState('Hero'); 
 
 
 
-  // Função para alternar o menu
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Opcional: fechar o menu ao clicar em um link
   const handleLinkClick = (nome:string, id:string) => {
     mostraComponente(nome, id);
     setMenuOpen(false);
@@ -109,28 +109,28 @@ const App = ()=> {
               e.preventDefault();
               mostraComponente("Hero", "Hero")
               handleLinkClick("Hero", "Hero")
-            }}>SOBRE</a>
+            }}>{lenguage === "br"? "SOBRE" : "ABOUT"}</a>
 
 
             <a id="Tec" href="#" className={activeLink === "Tec" ? 'active' : ''} onClick={(e) => {
               e.preventDefault();
               mostraComponente("Tec", "Tec")
               handleLinkClick("Tec", "Tec")
-            }}>TECNOLOGIAS</a>
+            }}>{lenguage === "br"? "TECNOLOGIAS" : "TECHNOLOGIES"}</a>
 
 
             <a id="Project" href="#" className={activeLink === "Project" ? 'active' : ''} onClick={(e) => {
               e.preventDefault();
               mostraComponente("Project", "Project")
               handleLinkClick("Project", "Project")
-            }}>PROJETOS</a>
+            }}>{lenguage === "br"? "PROJETOS" : "PROJECTS"}</a>
 
 
             <a id="Educacao" href="#" className={activeLink === "Educacao" ? 'active' : ''} onClick={(e) => {
               e.preventDefault();
               mostraComponente("Educacao", "Educacao")
               handleLinkClick("Educacao", "Educacao")
-            }}>EDUCAÇÃO</a>
+            }}>{lenguage === "br"? "EDUCAÇÃO" : "EDUCATION"}</a>
 
          {
             modo === 'sol' &&(
@@ -145,27 +145,27 @@ const App = ()=> {
           }
 
           <div className="lenguage-container" >
-            <div className="lenguage br"></div>
-            <div className="lenguage usa"></div>
+            <button onClick={()=>setLenguage("br")} className="lenguage br"></button>
+            <button onClick={()=>setLenguage("eua")} className="lenguage usa"></button>
           </div>
       </div>
 
 
       {isMobile ? (
-        // Em telas menores, empilha os componentes
+        
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <Hero modo={modo} />
-          <Tec modo={modo} />
-           <Project modo={modo} />
-          <Educacao modo={modo} />
+          <Hero lenguage={lenguage} modo={modo} />
+          <Tec lenguage={lenguage} modo={modo} />
+           <Project lenguage={lenguage} modo={modo} />
+          <Educacao lenguage={lenguage} modo={modo} />
         </div>
       ) : (
-        // Em telas maiores, mantém a disposição original ou como desejar
+       
         <>
-          {nomeComponente === "Hero" && <Hero modo ={modo} />}
-          {nomeComponente === "Tec" && <Tec modo={modo} />}
-          {nomeComponente === "Project" && <Project modo={modo} />}
-          {nomeComponente === "Educacao" && <Educacao modo={modo} />}
+          {nomeComponente === "Hero" && <Hero modo={modo} lenguage={lenguage} />}
+          {nomeComponente === "Tec" && <Tec modo={modo} lenguage={lenguage} />}
+          {nomeComponente === "Project" && <Project modo={modo} lenguage={lenguage} />}
+          {nomeComponente === "Educacao" && <Educacao modo={modo} lenguage={lenguage} />}
         </>
       )}
     </>
