@@ -45,7 +45,7 @@ const Educacao : React.FC<HeroProps> = ({ modo }) =>{
                 
                 <div className="Formacao">
                     <h2>Formação :</h2>
-                    <p>cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 1° Periodo</p>
+                    <p>Cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 2° Periodo</p>
                 </div>
                 
                 <div className="cursos">
@@ -73,6 +73,26 @@ const Educacao : React.FC<HeroProps> = ({ modo }) =>{
                         <div className="cursos_wraper  border c4">
 
                         </div>
+                    </div>
+
+                      <div className="cursos_box">
+                        <div className="cursos_wraper  border c5">
+
+                        </div>
+                      </div>
+
+                      <div className="cursos_box">
+                        <div className="cursos_wraper  border c6">
+
+                        </div>
+                    </div>
+
+                      <div className="cursos_box">
+                        <div className="cursos_wraper  border c7">
+
+                        </div>
+                        
+                    
                     </div>
                     </Slider>
                 </div>

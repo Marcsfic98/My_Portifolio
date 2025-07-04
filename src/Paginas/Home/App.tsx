@@ -143,6 +143,11 @@ const App = ()=> {
               <a onClick={modoLua}><FontAwesomeIcon className="icon2 lua" icon={faMoon} /></a>
             )
           }
+
+          <div className="lenguage-container" >
+            <div className="lenguage br"></div>
+            <div className="lenguage usa"></div>
+          </div>
       </div>
 
 
