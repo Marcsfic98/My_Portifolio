@@ -58,10 +58,10 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
               <p>E-comerce para venda de roupas e artigos esportivos , site 100% funcinal com pagina de vendas estoque e validação de cartão , feito com React,JavaScript , Typescript , Styled Components</p>
             </div>
             <div className="projeto_tec">
-              <a href="https://github.com/Marcsfic98/helia.git">
+              <a href="https://github.com/Marcsfic98/sportshopping.git">
                 <FontAwesomeIcon className="icon" icon={faGithub} />
               </a>
-              <a href="https://github.com/Marcsfic98/helia.git">
+              <a href="https://sportshopping-f2858.web.app/cart/checkout">
                 <FontAwesomeIcon className="icon" icon={faLink} />
               </a>
             </div>
