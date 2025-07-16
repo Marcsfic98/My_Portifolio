@@ -51,11 +51,11 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
 
            <div className='border'>
           <div className="projeto_box">
-            <div className="projeto_gif gif7"><div className='projeto_gif_img'></div></div>
+            <div className="projeto_gif gif7"></div>
             <h3>SportShopping</h3>
             <div className="projeto_info">
               
-              <p>E-comerce para venda de roupas e artigos esportivos , site 100% funcinal com pagina de vendas estoque e validação de cartão , feito com React,JavaScript , Typescript , Styled Components</p>
+              <p>E-comerce para venda de roupas e artigos esportivos , site 100% funcinal com pagina de vendas estoque e validação de cartão e uso de api para controle das mercadorias , feito com React,JavaScript , Typescript , Styled Components</p>
             </div>
             <div className="projeto_tec">
               <a href="https://github.com/Marcsfic98/sportshopping.git">
@@ -87,6 +87,24 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
           </div>
             </div>
 
+            <div className='border'>
+          <div className="projeto_box">
+            <div className="projeto_gif gif8"><div className='projeto_gif_img'></div></div>
+            <h3>GitFind</h3>
+            <div className="projeto_info">
+              
+              <p>Web site que utiliza a api do GitHub para buscar com base no nome do usuario os seus projetos.  feito usando React ,Javascript e Typescript</p>
+            </div>
+            <div className="projeto_tec">
+              <a href="https://github.com/Marcsfic98/Git-find.git">
+                <FontAwesomeIcon className="icon" icon={faGithub} />
+              </a>
+              <a href="https://github.com/Marcsfic98/Git-find.git">
+                <FontAwesomeIcon className="icon" icon={faLink} />
+              </a>
+            </div>
+          </div>
+            </div>
 
             <div className='border'>
               <div className="projeto_box ">
