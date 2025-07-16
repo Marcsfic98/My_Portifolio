@@ -14,11 +14,10 @@
 
 .tecnologias .container h2{
     text-align: left;
-    margin-bottom: 20px;
 }
 
 .tecnologias h3{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .tecnologias p{
@@ -30,7 +29,7 @@
 @media screen and (max-width:768px) {
     .tecnologias{
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
     }
     
 }

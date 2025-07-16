@@ -173,6 +173,7 @@ const Tec: React.FC<HeroProps> = ({ modo , lenguage}) => {
           <p>Git</p>
           <p>UX UI</p>
           <p>Typescript</p>
+          <p>Styled Components</p>
         </div>
       </div>
     </>

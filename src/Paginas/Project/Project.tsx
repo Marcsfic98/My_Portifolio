@@ -48,6 +48,46 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
       <div className="container">
         <h2>{lenguage === "br" ? "Alguns Projetos:" : "Some Projects:"}</h2>
         <Slider {...settings}>
+
+           <div className='border'>
+          <div className="projeto_box">
+            <div className="projeto_gif gif7"><div className='projeto_gif_img'></div></div>
+            <h3>SportShopping</h3>
+            <div className="projeto_info">
+              
+              <p>E-comerce para venda de roupas e artigos esportivos , site 100% funcinal com pagina de vendas estoque e validação de cartão , feito com React,JavaScript , Typescript , Styled Components</p>
+            </div>
+            <div className="projeto_tec">
+              <a href="https://github.com/Marcsfic98/helia.git">
+                <FontAwesomeIcon className="icon" icon={faGithub} />
+              </a>
+              <a href="https://github.com/Marcsfic98/helia.git">
+                <FontAwesomeIcon className="icon" icon={faLink} />
+              </a>
+            </div>
+          </div>
+            </div>
+
+           <div className='border'>
+          <div className="projeto_box">
+            <div className="projeto_gif_app gif2"></div>
+            <h3>Helia</h3>
+            <div className="projeto_info">
+              
+              <p>App criado de aluguel de casas e apartamentos , feito com React native , expo e Typescript</p>
+            </div>
+            <div className="projeto_tec">
+              <a href="https://github.com/Marcsfic98/helia.git">
+                <FontAwesomeIcon className="icon" icon={faGithub} />
+              </a>
+              <a href="https://github.com/Marcsfic98/helia.git">
+                <FontAwesomeIcon className="icon" icon={faLink} />
+              </a>
+            </div>
+          </div>
+            </div>
+
+
             <div className='border'>
               <div className="projeto_box ">
                   <div className="projeto_gif gif1"></div>
@@ -69,24 +109,6 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
             </div>
           </div>
 
-          <div className='border'>
-          <div className="projeto_box">
-            <div className="projeto_gif gif2"></div>
-            <h3>Amazon Clone</h3>
-            <div className="projeto_info">
-              
-              <p>Projeto clonando a plataforma da Amazon , resgatando informaçoes e imagens da API . Projeto realizado com Html , Css e JavaScript</p>
-            </div>
-            <div className="projeto_tec">
-              <a href="https://github.com/Marcsfic98/amazon-clone">
-                <FontAwesomeIcon className="icon" icon={faGithub} />
-              </a>
-              <a href="">
-                <FontAwesomeIcon className="icon" icon={faLink} />
-              </a>
-            </div>
-          </div>
-            </div>
 
             <div className='border'>
           <div className="projeto_box">
@@ -94,7 +116,7 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
             <h3>Monguilhott</h3>
             <div className="projeto_info">
               
-              <p>Site realizado para consultorio odontologico , com funcionalidades em lins e menus . Totalmente responsivo. Utilizando Html ,Css e Javascript</p>
+              <p>Site realizado para consultorio odontologico , com funcionalidades em links e menus . Totalmente responsivo. Utilizando Html ,Css e Javascript</p>
             </div>
             <div className="projeto_tec">
               <a href="https://github.com/Marcsfic98/monguilhott">
@@ -129,7 +151,7 @@ const Project: React.FC<HeroProps> = ({ modo , lenguage }) => {
             <div className='border'>
           <div className="projeto_box">
             <div className="projeto_gif gif5"></div>
-            <h3>Amazon Clone</h3>
+            <h3>Agência Dank</h3>
             <div className="projeto_info">
               
               <p>Projeto de site para agência de marketing , com informações e contatos para orçamentos e duvias , totalmente responsivo . Projeto realizado com Html , Css e JavaScript</p>

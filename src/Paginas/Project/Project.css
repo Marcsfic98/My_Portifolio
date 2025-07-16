@@ -35,8 +35,18 @@
     background-repeat: no-repeat;
 }
 
+.projeto_gif_app{
+     width: 72%;
+    margin: 20px auto;
+    height: 80%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
-  .projeto_box:hover .projeto_gif ,.projeto_box:hover h3{
+
+
+  .projeto_box:hover .projeto_gif,.projeto_box:hover .projeto_gif_app ,.projeto_box:hover h3{
     display: none;
     transition: 8s;
   }
@@ -46,7 +56,7 @@
 }
 
 .gif2{
-    background-image: url("../../assets/projetos/amazon.gif");
+    background-image: url("../../assets/projetos/helia.gif");
 }
 
 .gif3{
@@ -63,6 +73,10 @@
 
 .gif6{
     background-image: url("../../assets/projetos/game.gif");
+}
+
+.gif7{
+    background-image: url("../../assets/projetos/SPORTSHOPPING.gif");
 }
 
 .projeto_info{
