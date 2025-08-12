@@ -12,7 +12,7 @@ Este projeto foi desenvolvido com uma base sólida de tecnologias modernas para 
 
 * **Styled-Components**: Para estilização e design responsivo.
 
-* **TypeScript]**: Melhoria da Produtividade e da Manutenção
+* **TypeScript**: Melhoria da Produtividade e da Manutenção
 
 ## ✨ Funcionalidades Principais
 
@@ -30,7 +30,7 @@ Se você deseja explorar o código ou rodar o projeto na sua máquina, siga os p
 
 1. **Clone o repositório:**
    ```
-   git clone [https://github.com/Marcsfic98/My_Portifolio.git](https://github.com/Marcsfic98/My_Portifolio.git)
+   git clone https://github.com/Marcsfic98/My_Portifolio.git
    ```
 2. **Acesse o diretório do projeto:**
    ```
