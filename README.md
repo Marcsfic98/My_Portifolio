@@ -37,7 +37,7 @@ Se você deseja explorar o código ou rodar o projeto na sua máquina, siga os p
    cd My_portifolio
    ```
 
-   O portfólio estará disponível em `https://portfoliomr265.web.app/`.
+   O portfólio estará disponível em https://portfoliomr265.web.app/.
 
 ## 🤝 Conecte-se Comigo
 
