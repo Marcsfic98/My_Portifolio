@@ -40,6 +40,10 @@ Se você deseja explorar o código ou rodar o projeto na sua máquina, siga os p
    ```
    cd My_portifolio
    ```
+3. **Digite o comando para iniciar o projeto:**
+   ```
+   cd npm run dev
+   ```
 
    O portfólio estará disponível em https://portfoliomr265.web.app/.
 
