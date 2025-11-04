@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# Meu Portfólio de Desenvolvedor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá! Sou Marcos Ribeiro e este é o meu portfólio digital, criado para exibir meus projetos, habilidades e experiência como desenvolvedor Front-end e Mobile.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias e Ferramentas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido com uma base sólida de tecnologias modernas para garantir uma experiência de usuário fluida e um código escalável.
 
-## Expanding the ESLint configuration
+* **React**: A espinha dorsal da aplicação, utilizada para construir a interface de usuário.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **React Router DOM**: Para gerenciar a navegação entre as páginas do portfólio.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+* **Styled-Components**: Para estilização e design responsivo.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* **TypeScript**: Melhoria da Produtividade e da Manutenção
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ✨ Funcionalidades Principais
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+* **Página Inicial (Home)**: Uma introdução sobre quem eu sou e uma visão geral do meu trabalho.
+
+* **Página "Sobre"**: Detalhes sobre minha trajetória, habilidades técnicas e soft skills.
+
+* **Página de Projetos**: Uma galeria dinâmica com os projetos que desenvolvi, incluindo links para o código e para a demo online.
+
+* **Página de Certificados**: uma galeria dinâmica com minhas formações e meus sertificados.
+
+## 📦 Como Rodar o Projeto Localmente
+
+Se você deseja explorar o código ou rodar o projeto na sua máquina, siga os passos abaixo:
+
+1. **Clone o repositório:**
+   ```
+   git clone https://github.com/Marcsfic98/My_Portifolio.git
+   ```
+2. **Acesse o diretório do projeto:**
+   ```
+   cd My_portifolio
+   ```
+
+   O portfólio estará disponível em https://portfoliomr265.web.app/.
+
+## 🤝 Conecte-se Comigo
+
+Sinta-se à vontade para se conectar comigo e saber mais sobre meu trabalho:
+
+* **LinkedIn**: https://www.linkedin.com/in/marcsfic/
+* **GitHub**: https://github.com/Marcsfic98/
+* **Email**: Marcsfic98@gmail.com
+
+---
+
+Feito  por **Marcos Ribeiro**
