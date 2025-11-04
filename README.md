@@ -2,6 +2,10 @@
 
 Olá! Sou Marcos Ribeiro e este é o meu portfólio digital, criado para exibir meus projetos, habilidades e experiência como desenvolvedor Front-end e Mobile.
 
+
+
+
+![Banner Portifólio](./public/portifolio.png)
 ## 🚀 Tecnologias e Ferramentas
 
 Este projeto foi desenvolvido com uma base sólida de tecnologias modernas para garantir uma experiência de usuário fluida e um código escalável.
