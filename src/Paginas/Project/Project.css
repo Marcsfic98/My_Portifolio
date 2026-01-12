@@ -1,7 +1,7 @@
 .project{
     width: 80%;
     display: block;
-    
+    overflow-x: hidden;
 }
 
 .container{
@@ -10,19 +10,26 @@
 }
 
 .container h2{
-    text-align: center;
+    text-align: left;
     padding: 40px 0;
 }
 
 
+.container .title-stack {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 30px;
+}
+
 
 .projeto_box {
-    height: 70vh;
+    height: 90vh;
     margin: 10px 0;
     border: 3px solid #38055d;
     position: relative;
     transform-style: preserve-3d;
     transition: transform .8s ease-in-out;
+    cursor: pointer;
   }
 
 
@@ -46,10 +53,45 @@
 
 
 
-  .projeto_box:hover .projeto_gif,.projeto_box:hover .projeto_gif_app ,.projeto_box:hover h3{
-    display: none;
-    transition: 8s;
-  }
+
+
+.projeto_info{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto_box h3{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 25px;
+}
+
+.projeto_info p{
+    padding: 0 30px;
+    font-size: 17px;
+    
+
+}
+
+.projeto_tec{
+    position: absolute;
+    bottom: -25px;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    margin-left: 18px;
+    width: 100%;
+    
+}
+
+.projeto_tec a{
+    font-size: 25px;
+    margin:0 15px;
+}
+
 
 .gif1{
     background-image: url("../../assets/projetos/Rmcars.gif");
@@ -82,50 +124,7 @@
 .gif8{
     background-image: url("../../assets/projetos/gitfind.gif");
 }
-.projeto_info{
-    width: 100%;
-    height: 80%;
-    text-align: center;
-    display:none;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-}
 
-.projeto_box h3{
-    text-align: center;
-    margin: 15px 0;
-    font-size: 25px;
-}
-
-.projeto_info p{
-    padding: 0 30px;
-    font-size: 17px;
-    
-
-}
-
-.projeto_tec{
-    display: none;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 20%;
-    margin-left: 18px;
-    width: 100%;
-}
-
-.projeto_tec a{
-    font-size: 25px;
-    margin:0 15px;
-}
-
-.projeto_box:hover .projeto_info {
-    display: flex;
-  }
-
- .projeto_box:hover .projeto_tec{
-    display: flex;
- }
 
 @media screen and (max-width:768px) {
     .project{

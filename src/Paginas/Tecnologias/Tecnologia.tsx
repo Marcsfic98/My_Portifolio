@@ -5,10 +5,18 @@ import {
   faHtml5,
   faReact,
   faNodeJs,
-  faSass,
-  faLess,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
+import { SiNestjs } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiEslint } from "react-icons/si";
+import { SiPrettier } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
+import { SiJest } from "react-icons/si";
 
 import "./Tecnologia.css";
 import React from "react";
@@ -95,16 +103,25 @@ const Tec: React.FC<HeroProps> = ({ modo , lenguage}) => {
                 <FontAwesomeIcon className="icon" icon={faCss3} />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faSass} />
+                <TbBrandNextjs className="icon" />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faLess} />
+                <FontAwesomeIcon className="icon" icon={faReact} />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faJsSquare} />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faReact} />
+                <SiTypescript className="icon"/>
+              </div>
+              <div>
+                <SiExpress className="icon"/>
+                </div>  
+              <div>
+                <RiTailwindCssFill className="icon" />
+              </div>  
+              <div>
+                <SiNestjs className="icon" />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faNodeJs} />
@@ -113,22 +130,43 @@ const Tec: React.FC<HeroProps> = ({ modo , lenguage}) => {
                 <FontAwesomeIcon className="icon" icon={faGit} />
               </div>
               <div>
+                <SiEslint  className="icon"/>
+              </div>
+              <div>
+                <SiPrettier className="icon"/>
+              </div>
+              <div>
+                <BiLogoPostgresql className="icon"/>
+              </div>
+              <div>
+                <SiMysql className="icon"/>
+              </div>
+                <div>
                 <FontAwesomeIcon className="icon" icon={faHtml5} />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faCss3} />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faSass} />
+                <TbBrandNextjs className="icon" />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faLess} />
+                <FontAwesomeIcon className="icon" icon={faReact} />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faJsSquare} />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faReact} />
+                <SiTypescript className="icon"/>
+              </div>
+              <div>
+                <SiExpress className="icon"/>
+                </div>  
+              <div>
+                <RiTailwindCssFill className="icon" />
+              </div>  
+              <div>
+                <SiNestjs className="icon" />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faNodeJs} />
@@ -137,22 +175,43 @@ const Tec: React.FC<HeroProps> = ({ modo , lenguage}) => {
                 <FontAwesomeIcon className="icon" icon={faGit} />
               </div>
               <div>
+                <SiEslint  className="icon"/>
+              </div>
+              <div>
+                <SiPrettier className="icon"/>
+              </div>
+              <div>
+                <BiLogoPostgresql className="icon"/>
+              </div>
+              <div>
+                <SiMysql className="icon"/>
+              </div>
+                <div>
                 <FontAwesomeIcon className="icon" icon={faHtml5} />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faCss3} />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faSass} />
+                <TbBrandNextjs className="icon" />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faLess} />
+                <FontAwesomeIcon className="icon" icon={faReact} />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faJsSquare} />
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faReact} />
+                <SiTypescript className="icon"/>
+              </div>
+              <div>
+                <SiExpress className="icon"/>
+                </div>  
+              <div>
+                <RiTailwindCssFill className="icon" />
+              </div>  
+              <div>
+                <SiNestjs className="icon" />
               </div>
               <div>
                 <FontAwesomeIcon className="icon" icon={faNodeJs} />
@@ -160,20 +219,66 @@ const Tec: React.FC<HeroProps> = ({ modo , lenguage}) => {
               <div>
                 <FontAwesomeIcon className="icon" icon={faGit} />
               </div>
+              <div>
+                <SiEslint  className="icon"/>
+              </div>
+              <div>
+                <SiPrettier className="icon"/>
+              </div>
+              <div>
+                <BiLogoPostgresql className="icon"/>
+              </div>
+              <div>
+                <SiMysql className="icon"/>
+              </div>
+              <div>
+                <SiJest className="icon"/>
+              </div>
+              
             </Slider>
           </div>
 
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>Javascript</p>
-          <p>React</p>
-          <p>NodeJs</p>
-          <p>Sass e Less</p>
-          <p>Firebase</p>
-          <p>Git</p>
-          <p>UX UI</p>
-          <p>Typescript</p>
-          <p>Styled Components</p>
+          <div className="stacks">
+             {
+            lenguage === "br"?(
+                <p>LINGUAGENS</p>
+              ):
+                <p>LANGUAGES</p> 
+            }
+              <h3>JAVASCRIPT, TYPESCRIPT</h3>
+          </div>
+
+          <div className="stacks">
+                {
+            lenguage === "br"?(
+                <p>FRAMEWORKS E BIBLIOTECAS</p>
+              ):
+                <p>FRAMEWORKS AND LIBRARIES</p> 
+            }
+              <h3>REACT, REACT NATIVE, NEXT.JS, NODE.JS, NEST.JS, EXPRESS</h3>
+          </div>
+
+          <div className="stacks">
+                {
+            lenguage === "br"?(
+                <p>FERRAMENTAS E TESTES</p>
+              ):
+                <p>TOOLS AND TESTS</p> 
+            }
+              <h3>JEST, ESLINT, PRETTIER, GIT, GITHUB</h3>
+          </div>
+
+             <div className="stacks">
+                {
+            lenguage === "br"?(
+                <p>BANCO DE DADOS</p>
+              ):
+                <p>DATABASES</p> 
+            }
+              <h3>POSTGRESQL, MYSQL, MONGODB</h3>
+          </div>
+
+
         </div>
       </div>
     </>

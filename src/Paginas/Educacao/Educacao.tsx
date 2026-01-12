@@ -45,8 +45,8 @@ const Educacao : React.FC<HeroProps> = ({ modo , lenguage }) =>{
             <div className="container">
                 
                 <div className="Formacao">
-                    <h2>{lenguage === "br" ? "Formação :":"TRAINING"}</h2>
-                    <p>{lenguage === "br" ? "Cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 2° Periodo":"Studying systems analysis and development | Mauricio de Nassau University | 2nd Period"}</p>
+                    <h2>{lenguage === "br" ? "FORMAÇÃO :":"TRAINING"}</h2>
+                    <p>{lenguage === "br" ? "Cursando analize e desenvolvimento de sistemas | Universidade Mauricio de Nassau | 3° Periodo":"Studying systems analysis and development | Mauricio de Nassau University | 3nd Period"}</p>
                 </div>
                 
                 <div className="cursos">
